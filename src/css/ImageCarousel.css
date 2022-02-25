@@ -1,6 +1,19 @@
 #carouselWrapper {
-	height: 60vh;
+	height: 30em;
+	min-height: 30em;
 	overflow-y: clip;
 	justify-content: center;
 	align-items: center;
+}
+
+.carouselText {
+	position: absolute;
+	top: 26em;
+	right: 1vw;
+	color: black;
+	background-color: wheat;
+	padding: .5em;
+	border: 1px solid white;
+	border-radius: 50%;
+	opacity: .9;
 }

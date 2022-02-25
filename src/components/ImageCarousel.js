@@ -13,19 +13,15 @@ const ImageCarousel = () => {
 				showStatus={false}
 				showIndicators={false}
 				showThumbs={false}
+				animationHandler="fade"
+				interval={5000}
 			>
-				<div>
-					<img src={images.austin} alt="Austin, TX" />
+			{images.map((image) => (
+				<div key={image.alt}>
+					<img src={image.src} alt={image.alt} />
+					<p className="carouselText">{image.alt}</p>
 				</div>
-				<div>
-					<img src={images.bristol} alt="Bristol, UK" />
-				</div>
-				<div>
-					<img src={images.bude} alt="Bude, UK" />
-				</div>
-				<div>
-					<img src={images.lleida} alt="Lleida, ES" />
-				</div>
+			))}
 			</Carousel>
 		</div>
 	)

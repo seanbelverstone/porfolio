@@ -1,13 +1,17 @@
-import austin from './austin2.jpg';
-import bristol from './bristol2.jpg';
-import bude from './bude2.jpg';
-import lleida from './lleida2.jpg';
+import austin from './austin.jpg';
+import bristol from './bristol.jpg';
+import bude from './bude.jpg';
+import lleida from './lleida.jpg';
+import cardiff from './cardiff.jpg';
+import sanAntonio from './sanAntonio.jpg';
 
-const images = {
-	austin,
-	bristol,
-	bude,
-	lleida
-};
+const images = [
+	{ src: austin, alt: 'Austin, TX' },
+	{ src: bristol, alt: 'Bristol, UK'},
+	{ src: bude, alt: 'Bude, UK' },
+	{ src: lleida, alt: 'Lleida, ES' },
+	{ src: cardiff, alt: 'Cardiff, UK'},
+	{ src: sanAntonio, alt: 'San Antonio, TX'}
+];
 
 export default images;
