@@ -27,4 +27,21 @@
 #meAndPoppy {
 	width: 20em;
 	border-radius: 25%;
+	border: 8px double black;
+}
+
+#socialsWrapper {
+	width: 1em;
+}
+
+.socialLogo {
+	width: 5em;
+}
+
+#github, #instagram {
+	margin-left: 1em;
+}
+
+#linkedin {
+	width: 7em;
 }

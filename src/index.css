@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Open Sans', sans-serif;
+  background-color: gainsboro;
 }
 
 code {
@@ -23,6 +24,10 @@ a:hover {
 a:active {
 	font-weight: bold;
 }
+a img:active {
+	transform: scale(80%);
+}
+
 a:visited {
 	color: black;
 }

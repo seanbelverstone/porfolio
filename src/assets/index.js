@@ -5,6 +5,10 @@ import lleida from './lleida.jpg';
 import cardiff from './cardiff.jpg';
 import sanAntonio from './sanAntonio.jpg';
 import meAndPoppy from './meAndPoppy.jpg';
+// socials
+import github from './socials/github.png';
+import linkedin from './socials/linkedin.png';
+import instagram from './socials/instagram.png';
 
 export const carouselImages = [
 	{ src: austin, alt: 'Austin, TX' },
@@ -22,7 +26,10 @@ export const allImages = {
 	lleida,
 	cardiff,
 	sanAntonio,
-	meAndPoppy
+	meAndPoppy,
+	github,
+	linkedin,
+	instagram
 }
 
 export default carouselImages;
