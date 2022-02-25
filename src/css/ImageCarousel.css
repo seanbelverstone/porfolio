@@ -1,0 +1,6 @@
+#carouselWrapper {
+	height: 60vh;
+	overflow-y: clip;
+	justify-content: center;
+	align-items: center;
+}

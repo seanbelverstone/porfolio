@@ -1,10 +1,10 @@
-import austin from '../assets/austin.jpg'
+import ImageCarousel from "../components/ImageCarousel";
 
 const Home = () => {
 	return (
 		<div>
-		<img src={austin} alt="Austin, TX"></img>
-		<div>Homepage</div>
+			<ImageCarousel />
+			<div>Homepage</div>
 		</div>
 
 	)
