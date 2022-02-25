@@ -1,7 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
-import images from '../assets/index';
+import carouselImages from '../assets/index';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import '../css/ImageCarousel.css';
+import './css/ImageCarousel.css';
 
 const ImageCarousel = () => {
 	return (
@@ -16,7 +16,7 @@ const ImageCarousel = () => {
 				animationHandler="fade"
 				interval={5000}
 			>
-			{images.map((image) => (
+			{carouselImages.map((image) => (
 				<div key={image.alt}>
 					<img src={image.src} alt={image.alt} />
 					<p className="carouselText">{image.alt}</p>
