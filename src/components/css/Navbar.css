@@ -12,3 +12,7 @@
 	padding: 1em;
 	text-shadow: 1px 1px black;
 }
+
+.active {
+	border-bottom: 3px double black;
+}

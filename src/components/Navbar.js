@@ -1,6 +1,21 @@
+import { useEffect } from 'react';
 import './css/Navbar.css';
 
 const Navbar = () => {
+
+	useEffect(() => {
+		applyActiveClass();
+	})
+
+	const applyActiveClass = () => {
+		const navLinks = document.getElementsByClassName('navlinks');
+		console.log(navLinks);
+		Array.from(navLinks).forEach((item) => {
+			console.log(item.className);
+			if (item.pathname === window.location.pathname) item.className = ('navlinks active')
+		})
+	}
+
 	return (
 		<div id="navbarWrapper">
 			<a className="navlinks" href="/">HOME</a>
