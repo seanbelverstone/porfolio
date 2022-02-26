@@ -9,6 +9,11 @@ import meAndPoppy from './meAndPoppy.jpg';
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
 import instagram from './socials/instagram.png';
+// projects
+import antre from './projects/antre.png'
+import biscuits from './projects/biscuits.png';
+import lotr from './projects/lotr.png';
+import reelTime from './projects/reelTime.png';
 
 export const carouselImages = [
 	{ src: austin, alt: 'Austin, TX' },
@@ -29,7 +34,11 @@ export const allImages = {
 	meAndPoppy,
 	github,
 	linkedin,
-	instagram
+	instagram,
+	antre,
+	biscuits,
+	lotr,
+	reelTime
 }
 
 export default carouselImages;
