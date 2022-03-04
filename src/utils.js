@@ -11,7 +11,7 @@ export const projectList = {
 	antre: {
 		src: allImages.antre,
 		title: 'Antre',
-		description: 'test description',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet risus quis libero maximus gravida. In laoreet, metus sit amet finibus feugiat, libero urna malesuada nibh, non luctus orci diam sit amet nulla. Quisque et porttitor diam. Pellentesque non libero orci. Nunc vulputate venenatis dolor, non dignissim dolor efficitur ac. Aliquam ut nibh at metus auctor scelerisque at ac nunc. Quisque congue urna vel nisl facilisis dignissim. Donec faucibus vehicula nisl. Sed leo massa, facilisis ut tincidunt sed, tincidunt et quam. Etiam lobortis dolor vel enim volutpat, et maximus lacus vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla leo lobortis, suscipit elit at, convallis quam. Phasellus commodo tellus at leo tempor, a pharetra mauris tristique. Ut tincidunt ornare sollicitudin. Nunc tempor erat suscipit dignissim ultrices. Suspendisse porta dictum enim commodo commodo.',
 		liveLink: 'https://www.antregame.com',
 		githubLink: 'https://github.com/seanbelverstone/antreGame'
 	},
@@ -25,7 +25,7 @@ export const projectList = {
 	reelTime: {
 		src: allImages.reelTime,
 		title: 'Reel Time',
-		description: 'Reel Time was my graduation project. Utilising a combination of React, Sequelize and Express, and built in a group of 4, this project is a culmination of everything we had learnt on over the prior 6 months. My role in the group was to focus on the back-end, including routing, server setup and database management.',
+		description: 'Reel Time was my graduation project. Utilizing a combination of React, Sequelize and Express, and built in a group of 4, this project is a culmination of everything we had learnt on over the prior 6 months. My role in the group was to focus on the back-end, including routing, server setup and database management.',
 		liveLink: 'https://reel-time-app.herokuapp.com/',
 		githubLink: 'https://github.com/seanbelverstone/Reel-Time'
 	},

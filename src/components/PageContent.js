@@ -8,14 +8,24 @@ const PageContent = forwardRef((props, ref) => {
 			ref={ref}
 			data-density={props.cover && 'hard'}>
 			{props.title && (
-				<h3>{props.title}</h3>
+				<h1>{props.title}</h1>
 			)}
 			{props.src ? (
 				<img className="projectImage" src={props.src} alt={props.title} />
 			) : (
-				<p>{props.text}</p>
+				<div className="projectText">
+					<p>{props.text}</p>
+					{(props.live && props.git) && (
+						<div className="projectLinks">
+							<a href={props.live} target="_blank" rel="noreferrer">Live Demo</a>
+							<a href={props.git} target="_blank" rel="noreferrer">GitHub Repo</a>
+						</div>
+
+					)}
+
+				</div>
 			)}
-			<div className="footer"><p>{props.number}</p></div>
+			{props.number && (<div className="footer"><span>{props.number}</span></div>)}
 		</div>
 	)
 });

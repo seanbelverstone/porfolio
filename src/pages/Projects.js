@@ -5,6 +5,7 @@ import { projectList } from '../utils';
 import './css/Projects.css';
 
 const Projects = () => {
+	const { antre, biscuits, lotr, reelTime } = projectList;
 	const book = useRef();
 
 	return (
@@ -26,28 +27,31 @@ const Projects = () => {
 				className="demo-book"
 				ref={book}>
 				<PageContent coverType="preCover" />
-				<PageContent coverType='cover' title="Projects" cover/>
+				<PageContent coverType='cover' title="Projects" cover />
 				{/* Page 1 */}
-				<PageContent title={projectList.antre.title} src={projectList.antre.src} number={1} />
-				<PageContent text={projectList.antre.description} number={2} />
+				<PageContent title={antre.title} src={antre.src} number={1} />
+				<PageContent text={antre.description} live={antre.liveLink} git={antre.githubLink} number={2} />
 
 				{/* Page 2 */}
-				<PageContent title={projectList.biscuits.title} src={projectList.biscuits.src} number={3} />
-				<PageContent text={projectList.biscuits.description} number={4} />
+				<PageContent title={biscuits.title} src={biscuits.src} number={3} />
+				<PageContent text={biscuits.description} live={biscuits.liveLink} git={biscuits.githubLink} number={4} />
 
 				{/* Page 3 */}
-				<PageContent title={projectList.lotr.title} src={projectList.lotr.src} number={5} />
-				<PageContent text={projectList.lotr.description} number={6} />
+				<PageContent title={lotr.title} src={lotr.src} number={5} />
+				<PageContent text={lotr.description} live={lotr.liveLink} git={lotr.githubLink} number={6} />
 
 				{/* Page 4 */}
-				<PageContent title={projectList.reelTime.title} src={projectList.reelTime.src} number={7} />
-				<PageContent text={projectList.reelTime.description} number={8} />
+				<PageContent title={reelTime.title} src={reelTime.src} number={7} />
+				<PageContent text={reelTime.description} live={reelTime.liveLink} git={reelTime.githubLink} number={8} />
 
-				<PageContent title="Thank you!" cover/>
+				<PageContent coverType="backCover" title="Thank you!" cover />
 				<PageContent coverType="postCover" />
 			</HTMLFlipBook>
-			<button onClick={() => book.current.pageFlip().flipPrev()}>Prev page</button>
-			<button onClick={() => book.current.pageFlip().flipNext()}>Next page</button>
+			<div id="buttons">
+				<button onClick={() => book.current.pageFlip().flipPrev()}>Prev page</button>
+				<button onClick={() => book.current.pageFlip().flipNext()}>Next page</button>
+			</div>
+
 		</div>
 
 	)
