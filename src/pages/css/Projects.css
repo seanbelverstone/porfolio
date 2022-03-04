@@ -1,13 +1,10 @@
-#bookWrapper {
-	padding: 5em;
-	width: 37.5em;
-	position: fixed;
-	margin: 5px 30%;
+#projectsPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px;
 }
-
-/* .stf__parent {
-	border: 4px double black;
-} */
 
 .demoPage {
 	border: 2px solid black;
@@ -18,7 +15,26 @@
 	flex-direction: column;
 }
 
+.cover.demoPage.stf__item.--right.--hard.--simple {
+	box-shadow: -10px -6px 41px black;
+}
+
+.preCover, .postCover {
+	border: none;
+	background-color: gainsboro !important;
+}
+
+.postCover {
+	border-left: 2px solid black;
+}
+
 .projectImage {
 	width: 18em;
+}
+
+.footer {
+	display: flex;
+	position: fixed;
+	bottom: 0;
 }
 

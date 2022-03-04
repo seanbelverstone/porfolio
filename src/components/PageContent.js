@@ -3,7 +3,10 @@ import '../pages/css/Projects.css';
 
 const PageContent = forwardRef((props, ref) => {
 	return (
-		<div className="demoPage" ref={ref}>
+		<div
+			className={`${props?.coverType ? props.coverType + ' ' : ''}demoPage`}
+			ref={ref}
+			data-density={props.cover && 'hard'}>
 			{props.title && (
 				<h3>{props.title}</h3>
 			)}
@@ -12,6 +15,7 @@ const PageContent = forwardRef((props, ref) => {
 			) : (
 				<p>{props.text}</p>
 			)}
+			<div className="footer"><p>{props.number}</p></div>
 		</div>
 	)
 });
