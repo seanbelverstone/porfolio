@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
+import Button from '../components/Button';
 import PageContent from '../components/PageContent';
 import { projectList } from '../utils';
 import './css/Projects.css';
@@ -44,8 +45,8 @@ const Projects = () => {
 				<PageContent coverType="postCover" />
 			</HTMLFlipBook>
 			<div id="buttons">
-				<button onClick={() => book.current.pageFlip().flipPrev()}>Prev page</button>
-				<button onClick={() => book.current.pageFlip().flipNext()}>Next page</button>
+				<Button text="&lt;&lt; Prev page" callback={() => book.current.pageFlip().flipPrev()}/>
+				<Button text="Next page &gt;&gt;" callback={() => book.current.pageFlip().flipNext()}/>
 			</div>
 
 		</div>
