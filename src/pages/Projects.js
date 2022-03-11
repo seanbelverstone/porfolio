@@ -19,15 +19,11 @@ const Projects = () => {
 				minHeight={400}
 				maxHeight={1000}
 				maxShadowOpacity={0.5}
-				// showCover={true}
 				mobileScrollSupport={true}
-				// onFlip={this.onPage}
-				// onChangeOrientation={this.onChangeOrientation}
-				// onChangeState={this.onChangeState}
 				className="demo-book"
 				ref={book}>
 				<PageContent coverType="preCover" />
-				<PageContent coverType='cover' title="Projects" cover />
+				<PageContent coverType='cover' mainTitle="Projects" subtitle="Open the book to see my past work!" cover />
 				{/* Page 1 */}
 				<PageContent title={antre.title} src={antre.src} number={1} />
 				<PageContent text={antre.description} live={antre.liveLink} git={antre.githubLink} number={2} />
@@ -44,7 +40,7 @@ const Projects = () => {
 				<PageContent title={reelTime.title} src={reelTime.src} number={7} />
 				<PageContent text={reelTime.description} live={reelTime.liveLink} git={reelTime.githubLink} number={8} />
 
-				<PageContent coverType="backCover" title="Thank you!" cover />
+				<PageContent coverType="backCover" mainTitle="Thank you!" cover />
 				<PageContent coverType="postCover" />
 			</HTMLFlipBook>
 			<div id="buttons">
