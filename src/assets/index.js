@@ -11,9 +11,13 @@ import linkedin from './socials/linkedin.png';
 import instagram from './socials/instagram.png';
 // projects
 import antre from './projects/antre.png'
+import antreTwo from './projects/antreTwo.png'
 import biscuits from './projects/biscuits.png';
+import biscuitsTwo from './projects/biscuitsTwo.png';
 import lotr from './projects/lotr.png';
+import lotrTwo from './projects/lotrTwo.png';
 import reelTime from './projects/reelTime.png';
+import reelTimeTwo from './projects/reelTimeTwo.png';
 
 export const carouselImages = [
 	{ src: austin, alt: 'Austin, TX' },
@@ -36,9 +40,13 @@ export const allImages = {
 	linkedin,
 	instagram,
 	antre,
+	antreTwo,
 	biscuits,
+	biscuitsTwo,
 	lotr,
-	reelTime
+	lotrTwo,
+	reelTime,
+	reelTimeTwo
 }
 
 export default carouselImages;

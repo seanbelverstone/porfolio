@@ -1,36 +1,62 @@
-import { forwardRef } from 'react';
+import { forwardRef, useState } from 'react';
 import './css/PageContent.css';
 
 const PageContent = forwardRef((props, ref) => {
-	console.log(props.mainTitle);
+	const {
+		coverType,
+		cover,
+		title,
+		mainTitle,
+		subtitle,
+		src,
+		altImage,
+		text,
+		live,
+		git,
+		number
+	} = props;
+	const [currentImage, setCurrentImage] = useState(src);
+
+	const mouseEnter = () => setCurrentImage(altImage);
+	const mouseLeave = () => setCurrentImage(src);
+
+	const renderText = () => {
+		return text.split('\n').map(item => (
+			<p>{item}</p>
+		))
+	}
+	
 	return (
 		<div
-			className={`${props?.coverType ? props.coverType + ' ' : ''}demoPage`}
+			className={`${coverType ? coverType + ' ' : ''}demoPage`}
 			ref={ref}
-			data-density={props.cover && 'hard'}>
-			{(props?.title || props?.mainTitle) && (
-				<h1 className={props.title ? 'pageTitle' : 'mainTitle'}>{props.title || props.mainTitle}</h1>
+			data-density={cover && 'hard'}>
+			{(title || mainTitle) && (
+				<h1 className={title ? 'pageTitle' : 'mainTitle'}>{title || mainTitle}</h1>
 			)}
-			{props?.subtitle && (
-				<h3 className="subtitle">{props.subtitle}</h3>
+			{subtitle && (
+				<h3 className="subtitle">{subtitle}</h3>
 			)}
-			{props.src && (
-				<img className="projectImage" src={props.src} alt={props.title} />
+			{src && (
+				<>
+				<img className="projectImage" src={currentImage} alt={title} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}/>
+				<i style={{ marginTop: '0.5em' }}>Hover over the image for an alternate view</i>
+				</>
 			)}
-			{props.text && (
+			{text && (
 				<div className="projectText">
-					<p>{props.text}</p>
-					{(props.live && props.git) && (
+					{renderText()}
+					{(live && git) && (
 						<div className="projectLinks">
-							<a href={props.live} target="_blank" rel="noreferrer">Live Demo</a>
-							<a href={props.git} target="_blank" rel="noreferrer">GitHub Repo</a>
+							<a href={live} target="_blank" rel="noreferrer">Live Demo</a>
+							<a href={git} target="_blank" rel="noreferrer">GitHub Repo</a>
 						</div>
 
 					)}
 
 				</div>
 			)}
-			{props.number && (<div className="footer"><span>{props.number}</span></div>)}
+			{number && (<div className="footer"><span>{number}</span></div>)}
 		</div>
 	)
 });
