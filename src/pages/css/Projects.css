@@ -12,21 +12,26 @@
 
 #projectTitleWrapper {
 	display: flex;
+	flex-direction: column;
 	width: 90vw;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
 #sizeNote {
 	background-color: wheat;
 	position: absolute;
-	top: 20vh;
+	top: 33vh;
 	margin: 0 auto;
 	padding: 1em 1em 2em 1em;
 	width: 80vw;
 	border-radius: 15px;
 	border: 2px solid black;
-	align-self: flex-end;
+}
+
+#questionMark {
+	width: 1.5em;
+	height: 1.5em;
 }
 
 .closeButton {
@@ -49,9 +54,18 @@
 	#projectsPage {
 		padding: 100px;
 	}
+}
 
-	#questionMark {
-		width: 1.5em;
-		height: 1.5em;
+@media screen and (max-width: 768px) {
+	#projectTitleWrapper {
+		display: flex;
+		width: 90vw;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+	}
+	#sizeNote {
+		top: 20vh;
+		width: 85vw;
 	}
 }

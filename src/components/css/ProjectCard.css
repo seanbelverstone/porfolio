@@ -27,10 +27,20 @@
 }
 
 @media screen and (max-width: 768px) {
-
+	.projectCardWrapper {
+		width: 80vw;
+	}
 }
 
 @media screen and (max-width: 600px) {
+	.projectCardWrapper {
+		width: 98vw;
+		margin: 0 0 1em 0;
+		padding: 0;
+	}
+	.projectImage {
+		width: 20em;
+	}
 
 }
 
@@ -39,13 +49,8 @@
 		width: 90vw;
 		margin-bottom: 2em;
 	}
-	.projectCardWrapper {
-		width: 95vw;
-		margin: 0;
-		padding: 0;
-	}
 
 	.projectImage {
-		width: 20em;
+		width: 15em;
 	}
 }
