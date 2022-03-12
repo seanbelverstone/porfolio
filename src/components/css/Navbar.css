@@ -16,3 +16,10 @@
 .active {
 	border-bottom: 3px double black;
 }
+
+@media screen and (max-width: 480px) {
+	.navlinks {
+		font-size: 0.85em;
+		padding: 0.5em;
+	}
+}

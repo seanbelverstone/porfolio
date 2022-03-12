@@ -22,10 +22,6 @@
 	margin: 1em;
 }
 
-@media screen and (max-width: 992px) {
-
-}
-
 @media screen and (max-width: 768px) {
 	.projectCardWrapper {
 		width: 80vw;
