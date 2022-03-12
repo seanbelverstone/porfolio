@@ -1,0 +1,23 @@
+.projectCardWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url('../../assets/pageLeft.jpg');
+	background-size: cover;
+	width: 60vw;
+	padding: 2em;
+	margin: 2em;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: -10px -6px 41px black;
+	border: 2px solid black;
+}
+
+.projectText {
+	width: 80%;
+	padding: 20px;
+	background-color: rgba(255, 235, 205, 0.397);
+	border-radius: 15px;
+	margin: 1em;
+}

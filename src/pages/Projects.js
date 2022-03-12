@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import Button from '../components/Button';
 import PageContent from '../components/PageContent';
+import ProjectCard from '../components/ProjectCard';
 import { projectList } from '../utils';
 import './css/Projects.css';
 
 const Projects = () => {
 	const { antre, biscuits, lotr, reelTime } = projectList;
 	const book = useRef();
-	const innerWidth = window.innerWidth;
 	const [bookView, setBookView] = useState(true);
 	const [dimentions, setDimensions] = useState({
 		width: window.innerWidth,
@@ -16,6 +16,9 @@ const Projects = () => {
 	});
 
 	useEffect(() => {
+		if (window.innerWidth < 1152) {
+			handleResize();
+		}
 		window.addEventListener('resize', handleResize, false);
 	}, [])
 
@@ -24,7 +27,7 @@ const Projects = () => {
 			width: window.innerWidth,
 			height: window.innerHeight,
 		});
-		if (window.innerWidth < 1150) {
+		if (window.innerWidth < 1152) {
 			setBookView(false)
 		} else {
 			setBookView(true)
@@ -73,7 +76,19 @@ const Projects = () => {
 					</div>
 				</>
 			) : (
-				<div>Card view y'all</div>
+				<>
+					<i>Your current screen width is <strong>{dimentions.width}</strong>. Return with a width bigger than <strong>1152</strong> for a different view!</i>
+					{Object.values(projectList).map(project => (
+						<ProjectCard
+							title={project.title}
+							src={project.src}
+							altImage={project.srcTwo}
+							text={project.description}
+							live={project.liveLink}
+							git={project.githubLink}
+						/>
+					))}
+				</>
 			)}
 
 
