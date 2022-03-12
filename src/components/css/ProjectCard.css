@@ -1,0 +1,56 @@
+.projectCardWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url('../../assets/pageLeft.jpg');
+	background-size: cover;
+	width: 60vw;
+	padding: 2em;
+	margin: 2em;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: -10px -6px 41px black;
+	border: 2px solid black;
+}
+
+.projectText {
+	width: 80%;
+	padding: 20px;
+	background-color: rgba(255, 235, 205, 0.397);
+	border-radius: 15px;
+	margin: 1em;
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	.projectCardWrapper {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.projectCardWrapper {
+		width: 98vw;
+		margin: 0 0 1em 0;
+		padding: 0;
+	}
+	.projectImage {
+		width: 20em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	#sizeNote {
+		width: 90vw;
+		margin-bottom: 2em;
+	}
+
+	.projectImage {
+		width: 15em;
+	}
+}
