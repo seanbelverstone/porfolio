@@ -35,7 +35,7 @@
 
 .cover, .backCover {
 	background-image: url('../../assets/cover.jpg') !important;
-	background-size: 600px 720px;
+	background-size: 100% 100% !important;
 }
 
 .mainTitle {
