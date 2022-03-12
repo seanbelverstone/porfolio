@@ -5,6 +5,7 @@ import lleida from './lleida.jpg';
 import cardiff from './cardiff.jpg';
 import sanAntonio from './sanAntonio.jpg';
 import meAndPoppy from './meAndPoppy.jpg';
+import questionMark from './questionMark.png';
 // socials
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
@@ -46,7 +47,8 @@ export const allImages = {
 	lotr,
 	lotrTwo,
 	reelTime,
-	reelTimeTwo
+	reelTimeTwo,
+	questionMark
 }
 
 export default carouselImages;

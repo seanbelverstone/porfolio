@@ -47,6 +47,10 @@
 	text-shadow: 2px 2px black;
 }
 
+.pageTitle {
+	text-align: center;
+}
+
 .demoPage.--right .projectText {
 	width: 80%;
 	padding: 20px;
@@ -84,4 +88,16 @@
 	align-items: center;
 	justify-content: center;
 	padding: 5px 0;
+}
+
+@media screen and (max-width: 1382px) {
+	.projectImage {
+		width: 25em;
+	}
+	.demoPage.--right .projectText {
+		font-size: 0.9em;
+	}
+	.projectLinks {
+		width: 60%;
+	}
 }

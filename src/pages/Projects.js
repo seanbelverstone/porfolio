@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
+import { allImages } from '../assets';
 import Button from '../components/Button';
 import PageContent from '../components/PageContent';
 import ProjectCard from '../components/ProjectCard';
@@ -8,12 +9,14 @@ import './css/Projects.css';
 
 const Projects = () => {
 	const { antre, biscuits, lotr, reelTime } = projectList;
+	const { questionMark } = allImages;
 	const book = useRef();
 	const [bookView, setBookView] = useState(true);
 	const [dimentions, setDimensions] = useState({
 		width: window.innerWidth,
 		height: window.innerHeight
 	});
+	const [note, setNote] = useState(false);
 
 	useEffect(() => {
 		if (window.innerWidth < 1152) {
@@ -77,7 +80,17 @@ const Projects = () => {
 				</>
 			) : (
 				<>
-					<i>Your current screen width is <strong>{dimentions.width}</strong>. Return with a width bigger than <strong>1152</strong> for a different view!</i>
+					<div id="projectTitleWrapper">
+						<h1>Projects</h1>
+						<img id="questionMark" src={questionMark} alt="A question mark" onClick={() => setNote(!note)} />
+						{note && (
+							<div id="sizeNote">
+								<div className="closeButton" onClick={() => setNote(!note)}>X</div>
+								<i>Your current screen width is <strong>{dimentions.width}</strong>. Return with a width bigger than <strong>1152</strong> for a different view!</i>
+							</div>
+						)}
+					</div>
+
 					{Object.values(projectList).map(project => (
 						<ProjectCard
 							title={project.title}
