@@ -1,6 +1,7 @@
 /* Theme */
 :root {
   --background: #FFC68F;
+  --backgroundFaded: #FFC68F7a;
   --foreground: #FFF3E3;
   --foregroundFaded: #FFF3E37a;
   --primary: #8FAFFF;

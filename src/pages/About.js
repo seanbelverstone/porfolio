@@ -1,9 +1,18 @@
+import ImageGallery from '../components/ImageGallery';
 import './css/About.css';
 
 const About = () => {
 	return (
 		<div id="aboutPage">
-			About page
+			<div id="firstRow">
+				
+			</div>
+			<div id="secondRow">
+
+			</div>
+			<div id="collage">
+				<ImageGallery />
+			</div>
 		</div>
 
 	)
