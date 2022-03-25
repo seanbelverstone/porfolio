@@ -4,8 +4,8 @@
 	overflow-y: clip;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 3px solid black;
-	border-top: 3px solid black;
+	border-bottom: 3px solid var(--secondary);
+	border-top: 3px solid var(--secondary);
 }
 
 .carouselText {
@@ -13,9 +13,8 @@
 	top: 26em;
 	right: 1vw;
 	color: black;
-	background-color: wheat;
-	padding: .5em;
-	border: 1px solid white;
+	background-color: var(--foreground);
+	padding: 0.5em;
 	border-radius: 50%;
-	opacity: .9;
+	opacity: 0.9;
 }
