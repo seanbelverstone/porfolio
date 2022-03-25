@@ -19,7 +19,8 @@
 }
 
 #sizeNote {
-	background-color: wheat;
+	background-color: var(--secondary);
+	color: var(--foreground);
 	position: absolute;
 	top: 33vh;
 	margin: 0 auto;
@@ -39,7 +40,7 @@
 	text-align: right;
 	padding-bottom: 0.25em;
 	font-weight: bold;
-	color: brown;
+	color: var(--tertiary);
 }
 
 .closeButton:hover {

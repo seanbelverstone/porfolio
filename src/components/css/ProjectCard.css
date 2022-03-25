@@ -17,9 +17,9 @@
 .projectText {
 	width: 80%;
 	padding: 20px;
-	background-color: rgba(255, 235, 205, 0.397);
 	border-radius: 15px;
 	margin: 1em;
+	font-size: 1.25em;
 }
 
 @media screen and (max-width: 768px) {
@@ -47,6 +47,6 @@
 	}
 
 	.projectImage {
-		width: 15em;
+		width: 20em;
 	}
 }
