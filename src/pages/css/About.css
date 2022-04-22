@@ -1,3 +1,18 @@
 #aboutPage {
 	padding: 5em;
 }
+
+#firstRow, #secondRow, #collage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#meDuckyAndMouse, #birdBirdCrew {
+	margin: 2em;
+}
+
+#aboutText {
+	width: 25vw;
+	margin: 2em;
+}

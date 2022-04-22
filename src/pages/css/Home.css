@@ -37,7 +37,7 @@
 	margin-bottom: 1em;
 }
 
-#meAndPoppy {
+.mainImages {
 	min-width: 1em;
 	max-width: 20em;
 	border-radius: 25%;
@@ -115,7 +115,7 @@
 		margin-top: 0;
 	}
 
-	#meAndPoppy {
+	.mainImages {
 		width: 15em;
 	}
 	
