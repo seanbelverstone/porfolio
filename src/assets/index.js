@@ -39,6 +39,7 @@ import poppy3 from './aboutPictures/poppy3.jpg';
 import puppies from './aboutPictures/puppies.jpg';
 import rupert from './aboutPictures/rupert.jpg';
 import seanOlivia from './aboutPictures/seanOlivia.jpg';
+import seanOlivia2 from './aboutPictures/seanOlivia2.jpg';
 import turtleCreek from './aboutPictures/turtleCreek.jpg';
 import wedding from './aboutPictures/wedding.jpg';
 import meDuckyAndMouse from './aboutPictures/meDuckyAndMouse.jpg';
@@ -55,7 +56,7 @@ export const carouselImages = [
 
 export const aboutPictures = [
 	{ img: beach, title: 'Summerleaze Beach, Bude' },
-	{ img: bread, title: 'Homemade loaf'},
+	{ img: seanOlivia2, title: 'Our tin-type photo'},
 	{ img: bella1, title: 'Bella on foster day', featured: true},
 	{ img: bella2, title: 'Bella post-foster-fail'},
 	{ img: bellaPoppy, title: 'Ying Yang'},
@@ -71,10 +72,11 @@ export const aboutPictures = [
 	{ img: poppy2, title: `She'd just woken up`},
 	{ img: poppy3, title: 'Poppy snoozing on the bed'},
 	{ img: puppies, title: '8 puppies that we found in the road', featured: true},
-	{ img: rupert, title: 'Rupert, the best old man'},
 	{ img: seanOlivia, title: 'In NYC'},
-	{ img: turtleCreek, title: 'Our first home'},
-	{ img: wedding, title: 'Wedding day'}
+	{ img: rupert, title: 'Rupert, the best old man'},
+	{ img: wedding, title: 'Wedding day'},
+	{ img: bread, title: 'Homemade loaf'},
+	{ img: turtleCreek, title: 'Our first home', featured: true}
 ]
 
 export const allImages = {

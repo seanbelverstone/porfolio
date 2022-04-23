@@ -15,4 +15,13 @@
 #aboutText {
 	width: 25vw;
 	margin: 2em;
+	background-color: var(--foregroundFaded);
+	padding: 1em;
+	border-radius: 2em;
+}
+
+.MuiImageListItem-root {
+	margin-left: -2px;
+	margin-bottom: -2px;
+	overflow-y: hidden;
 }

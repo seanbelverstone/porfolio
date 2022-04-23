@@ -44,7 +44,7 @@ export default function CustomImageList() {
 					width: '45vw',
 					height: 650,
 					// Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-					transform: 'translateZ(0)',
+					transform: 'translateZ(0)'
 				}}
 				rowHeight={200}
 				gap={1}
