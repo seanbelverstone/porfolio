@@ -13,7 +13,7 @@ const Home = () => {
 					<p>Lover of climbing, dogs, cooking, and gaming.</p>
 					<p>Let's collaborate!</p>
 				</div>
-				<img id="meAndPoppy" src={allImages.meAndPoppy} alt="Sean and his dog, Poppy" />
+				<img id="meAndPoppy" src={allImages.meAndPoppy} alt="Sean and his dog, Poppy" className="mainImages" />
 				<div id="socialsWrapper">
 					<a href="https://github.com/seanbelverstone" target="_blank" rel="noreferrer">
 						<img className="socialLogo" id="github" src={allImages.github} alt="Github Logo" />

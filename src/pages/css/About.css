@@ -1,0 +1,91 @@
+#aboutPage {
+	padding: 5em;
+}
+
+#firstRow, #secondRow, #collage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#listWrapper {
+	border: 8px double var(--secondary);
+	border-radius: 5%;
+	padding: 5px !important;
+	max-height: 50%;
+	background-color: var(--foreground);
+}
+.MuiImageList-root {
+	border-radius: 5%;
+	margin: 0px !important;
+}
+
+#meDuckyAndMouse, #birdBirdCrew {
+	margin: 2em;
+}
+
+#aboutText {
+	width: 25vw;
+	margin: 2em;
+	background-color: var(--foregroundFaded);
+	padding: 1em;
+	border-radius: 2em;
+}
+
+#imgContainer {
+	text-align: center;
+	display: none;
+}
+
+.MuiImageListItem-root {
+	margin-left: -2px;
+	margin-bottom: -2px;
+	overflow-y: hidden;
+}
+
+@media screen and (max-width: 992px) {
+	#firstRow, #secondRow {
+		flex-wrap: wrap;
+	}
+	#aboutText {
+		width: 75%;
+	}
+	#imgContainer {
+		display: block;
+	}
+	#birdBirdCrew {
+		margin: 0;
+	}
+	#meDuckyAndMouse {
+		display: none;
+	}
+	#collage {
+		margin-top: 1em;
+	}
+	.MuiImageList-root {
+		width: 65vw !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#aboutText {
+		width: 100%;
+		margin: 2em 0;
+	}
+	.MuiImageList-root {
+		width: 80vw !important;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	#aboutPage {
+		padding: 4em 1em;
+	}
+	.MuiImageList-root {
+		width: 80vw !important;
+	}
+	.images {
+		width: 95vw !important;
+	}
+}
