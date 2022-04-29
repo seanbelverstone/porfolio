@@ -1,0 +1,28 @@
+#contactPage {
+	padding: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 25vw;
+	background-color: var(--foregroundFaded);
+	border-radius: 5%;
+	padding: 1em;
+}
+
+.input {
+	margin: .75em !important;
+}
+
+#message {
+	height: 10em !important;
+	width: 20vw !important;
+	padding: .5em;
+	overflow-y: scroll !important;
+}

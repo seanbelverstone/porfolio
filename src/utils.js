@@ -7,6 +7,8 @@ export const applyActiveClass = (linkName) => {
 	})
 }
 
+export const isEmpty = item => item.length < 1;
+
 export const projectList = {
 	antre: {
 		src: allImages.antre,

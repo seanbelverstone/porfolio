@@ -1,7 +1,7 @@
 import './css/Button.css';
 
 const Button = (props) => {
-	const { text, callback, id, href, target, rel } = props;
+	const { text, callback, id, href, target, rel, type, disabled } = props;
 
 	return (
 		<button
@@ -10,6 +10,18 @@ const Button = (props) => {
 			href={href}
 			target={target}
 			rel={rel}
+			type={type}
+			style={{
+				...disabled ? {
+					border: 'solid grey 2px',
+					color: 'grey',
+					opacity: '0.4',
+					cursor: 'not-allowed'
+				} : {
+					border: 'solid var(--secondary) 2px',
+					cursor: 'pointer'
+				}
+			}}
 			>
 			{text}
 		</button>
