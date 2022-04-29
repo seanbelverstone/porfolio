@@ -6,6 +6,7 @@ import cardiff from './homes/cardiff.jpg';
 import sanAntonio from './homes/sanAntonio.jpg';
 import meAndPoppy from './meAndPoppy.jpg';
 import questionMark from './questionMark.png';
+import linebreak from './linebreak.png';
 // socials
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
@@ -94,7 +95,8 @@ export const allImages = {
 	reelTimeTwo,
 	questionMark,
 	meDuckyAndMouse,
-	birdBirdCrew
+	birdBirdCrew,
+	linebreak
 }
 
 export default carouselImages;
