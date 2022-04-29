@@ -8,6 +8,18 @@
 	align-items: center;
 }
 
+#listWrapper {
+	border: 8px double var(--secondary);
+	border-radius: 5%;
+	padding: 5px !important;
+	max-height: 50%;
+	background-color: var(--foreground);
+}
+.MuiImageList-root {
+	border-radius: 5%;
+	margin: 0px !important;
+}
+
 #meDuckyAndMouse, #birdBirdCrew {
 	margin: 2em;
 }

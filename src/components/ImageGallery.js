@@ -38,7 +38,7 @@ export default function CustomImageList() {
 		handleToggle();
 	}
 	return (
-		<>
+		<div id="listWrapper">
 			<ImageList
 				sx={{
 					width: '45vw',
@@ -88,6 +88,6 @@ export default function CustomImageList() {
 			<Backdrop open={open} onClick={handleClose} id='backdrop' style={{ zIndex: 100, color: 'var(--backgroundFaded)' }}>
 				<img src={imgSrc} alt='the same as before, just focused' style={{ width: 'auto', maxHeight: '75vh' }} className='images' />
 			</Backdrop>
-		</>
+		</div>
 	);
 }
