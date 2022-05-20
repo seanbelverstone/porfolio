@@ -24,6 +24,7 @@ body {
   background-color: var(--background);
   margin: 0;
   margin-bottom: 1em;
+  height: 100%;
 }
 
 code {

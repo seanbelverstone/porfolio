@@ -141,6 +141,8 @@ const Contact = () => {
 						<Button
 							text="Reset form"
 							id="resetForm"
+							callback={() => setMessageSent(false)}
+							style={{ margin: '1em' }}
 						/>
 					</div>
 				)}
