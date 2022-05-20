@@ -7,6 +7,7 @@ import sanAntonio from './homes/sanAntonio.jpg';
 import meAndPoppy from './meAndPoppy.jpg';
 import questionMark from './questionMark.png';
 import linebreak from './linebreak.png';
+import poppyLoader from './poppyLoader.png';
 // socials
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
@@ -96,7 +97,8 @@ export const allImages = {
 	questionMark,
 	meDuckyAndMouse,
 	birdBirdCrew,
-	linebreak
+	linebreak,
+	poppyLoader
 }
 
 export default carouselImages;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-/* TODO: Reenable once recaptcha is fixed */
 // import Recaptcha from "react-google-invisible-recaptcha";
 import TextField from '@mui/material/TextField';
 import emailjs from "emailjs-com"
 import './css/Contact.css';
 import Button from '../components/Button';
 import { internationalPhoneValidation, isEmpty } from '../utils';
+import Loader from '../components/Loader';
 
 const Contact = () => {
 
@@ -18,6 +18,8 @@ const Contact = () => {
 	const [phone, setPhone] = useState('');
 	const [phoneValid, setPhoneValid] = useState(true);
 	const [message, setMessage] = useState('');
+	const [loading, setLoading] = useState(false);
+	const [messageSent, setMessageSent] = useState(false);
 	const refRecaptcha = React.createRef();
 
 	useEffect(() => {
@@ -41,8 +43,8 @@ const Contact = () => {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		if (emailValid && phoneValid) {
-			/* TODO: Reenable once recaptcha is fixed */
-			// console.log(refRecaptcha.current);
+			// re-enable when recaptcha is working
+			// ISSUE: data is empty when sent
 			// refRecaptcha.current.execute();
 			sendEmail();
 		}
@@ -57,14 +59,18 @@ const Contact = () => {
 		};
 		console.log(data);
 		// Use emailjs to send an email
+		setLoading(true);
 		emailjs.send("gmail", "portfolio_template", data, process.env.REACT_APP_EMAILJS_USER_ID)
 			.then(response => {
-				console.log(`Success! Response status: ${response.status} & text: ${response.text}`);
-				// clear form
-				setName('');
-				setEmail('');
-				setPhone('')
-				setMessage('');
+				setTimeout(() => {
+					// clear form
+					setName('');
+					setEmail('');
+					setPhone('')
+					setMessage('');
+					setLoading(false)
+					setMessageSent(true);
+				}, 2000)
 			}, (err => {
 				console.log("Whoops, that failed.", err.text)
 			}));
@@ -73,55 +79,72 @@ const Contact = () => {
 	return (
 		<div id="contactPage">
 			<form id="contactForm" onSubmit={handleSubmit}>
-				<TextField
-					required
-					className="input"
-					id="name" label="Name"
-					variant="outlined"
-					value={name}
-					onChange={event => setName(event.target.value)}
-				/>
-				<TextField
-					required
-					className="input"
-					id="email"
-					label="Email"
-					variant="outlined"
-					error={!emailValid}
-					{...!emailValid && { helperText: "Email must be in the correct format" }}
-					value={email}
-					onChange={event => setEmail(event.target.value)}
-				/>
-				<TextField
-					className="input"
-					id="phone"
-					label="Phone"
-					variant="outlined"
-					error={!phoneValid}
-					{...!phoneValid && { helperText: 'Incorrect format' }}
-					placeholder="eg. +15555555555"
-					value={phone}
-					onChange={event => setPhone(event.target.value)}
-				/>
-				<TextField
-					className="input"
-					id="message"
-					label="Message"
-					placeholder="Placeholder"
-					variant="outlined"
-					multiline
-					required
-					value={message}
-					onChange={event => setMessage(event.target.value)}
-				/>
-				<Button
-					text="Submit"
-					type="submit"
-					id="submitButton"
-					disabled={isEmpty(name) ||
-						isEmpty(email) ||
-						isEmpty(message)}
-				/>
+				<Loader loading={loading} />
+				{!messageSent ? (
+					<>
+						<TextField
+							required
+							className="input"
+							id="name"
+							label="Name"
+							variant="outlined"
+							value={name}
+							onChange={event => setName(event.target.value)}
+						/>
+						<TextField
+							required
+							className="input"
+							id="email"
+							label="Email"
+							variant="outlined"
+							error={!emailValid}
+							{...!emailValid && { helperText: "Email must be in the correct format" }}
+							value={email}
+							onChange={event => setEmail(event.target.value)}
+						/>
+						<TextField
+							className="input"
+							id="phone"
+							label="Phone"
+							variant="outlined"
+							type="tel"
+							error={!phoneValid}
+							{...!phoneValid && { helperText: 'Incorrect format' }}
+							placeholder="eg. +15555555555"
+							value={phone}
+							onChange={event => setPhone(event.target.value)}
+						/>
+						<TextField
+							className="input"
+							id="message"
+							label="Message"
+							placeholder="Placeholder"
+							variant="outlined"
+							multiline
+							required
+							value={message}
+							onChange={event => setMessage(event.target.value)}
+						/>
+						<Button
+							text="Submit"
+							type="submit"
+							id="submitButton"
+							disabled={isEmpty(name) ||
+								isEmpty(email) ||
+								isEmpty(message)}
+						/>
+					</>
+				) : (
+					<div id="thankYouMessage">
+						<h1>Message sent!</h1>
+						<h3>Thank you. I'll respond as soon as I can!</h3>
+						<Button
+							text="Reset form"
+							id="resetForm"
+						/>
+					</div>
+				)}
+
 				{/* TODO: Reenable once recaptcha is fixed */}
 				{/* <Recaptcha
 					ref={refRecaptcha}
