@@ -28,6 +28,7 @@
 }
 
 #thankYouMessage {
+	padding: 5em;
 	animation: fadeIn 2s ease;
 	display: flex;
 	justify-content: center;

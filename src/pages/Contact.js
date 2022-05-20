@@ -20,7 +20,7 @@ const Contact = () => {
 	const [message, setMessage] = useState('');
 	const [loading, setLoading] = useState(false);
 	const [messageSent, setMessageSent] = useState(false);
-	const refRecaptcha = React.createRef();
+	// const refRecaptcha = React.createRef();
 
 	useEffect(() => {
 		!isEmpty(email) && validateEmail(email);
