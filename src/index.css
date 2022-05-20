@@ -24,6 +24,7 @@ body {
   background-color: var(--background);
   margin: 0;
   margin-bottom: 1em;
+  height: 100%;
 }
 
 code {
@@ -83,3 +84,10 @@ a:visited {
 	  scrollbar-width: thin;
 	}
   }
+
+/* For international flag input */
+/* .iti__flag {background-image: url("path/to/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.iti__flag {background-image: url("path/to/flags@2x.png");}
+} */
