@@ -2,10 +2,23 @@
 	padding: 5em;
 }
 
-#firstRow, #secondRow, #collage {
+.leftAligned, .rightAligned, #collage {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#rowOne {
+	margin-bottom: -4em;
+}
+
+#rowTwo {
+	margin-top: -4em;
+}
+
+#rowThree {
+	margin-top: -3em;
+	margin-bottom: 4em;
 }
 
 #listWrapper {
@@ -32,11 +45,6 @@
 	border-radius: 2em;
 }
 
-#imgContainer {
-	text-align: center;
-	display: none;
-}
-
 .MuiImageListItem-root {
 	margin-left: -2px;
 	margin-bottom: -2px;
@@ -44,7 +52,7 @@
 }
 
 @media screen and (max-width: 992px) {
-	#firstRow, #secondRow {
+	.leftAligned, .rightAligned {
 		flex-wrap: wrap;
 	}
 	#aboutText {

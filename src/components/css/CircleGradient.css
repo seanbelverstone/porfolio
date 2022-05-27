@@ -1,0 +1,9 @@
+#circleGradient {
+	width: 8em;
+	height: 8em;
+	border-radius: 100%;
+	background-image: radial-gradient(circle closest-side, var(--primaryFaded), var(--background));
+	position: fixed; /* Floating above */
+	pointer-events: none; /* Allow clicking trough the div */
+	z-index: -2 !important;
+}

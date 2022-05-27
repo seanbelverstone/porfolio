@@ -8,6 +8,7 @@ import meAndPoppy from './meAndPoppy.jpg';
 import questionMark from './questionMark.png';
 import linebreak from './linebreak.png';
 import poppyLoader from './poppyLoader.png';
+import corvia from './aboutPictures/corvia.jpg';
 // socials
 import github from './socials/github.png';
 import linkedin from './socials/linkedin.png';
@@ -98,7 +99,8 @@ export const allImages = {
 	meDuckyAndMouse,
 	birdBirdCrew,
 	linebreak,
-	poppyLoader
+	poppyLoader,
+	corvia
 }
 
 export default carouselImages;

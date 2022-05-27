@@ -91,3 +91,15 @@ a:visited {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 .iti__flag {background-image: url("path/to/flags@2x.png");}
 } */
+
+/* Mouse background coloration notes
+
+Based on the position of the mouse, add a circle behind it that's a gradient from
+background color on outside, to some other color on the inside. Hopefully this'll
+give it some kind of depth.
+
+something like
+background.addEventListener("mousemove", (e) => {
+	
+}
+*/
