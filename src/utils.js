@@ -49,4 +49,11 @@ export const internationalPhoneValidation = (phone) => {
 	return reg.test(phone)
 }
 
+export const mouseEffect = () => {
+	document.addEventListener('mousemove', (e) => {
+		document.getElementById('circleGradient').style.transform = 'translateY('+(e.clientY-60)+'px)';
+		document.getElementById('circleGradient').style.transform += 'translateX('+(e.clientX-60)+'px)';
+	})
+}
+
 export default applyActiveClass;
