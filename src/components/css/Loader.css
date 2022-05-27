@@ -24,6 +24,7 @@
 	height: 5em;
 	padding: .5em;
 	background-color: var(--primaryFaded);
+	perspective: .5px;
 }
 
 #loadingText:after {
@@ -34,6 +35,10 @@
 	animation: ellipsis steps(8,end) 900ms infinite;
 	content: "\2026"; /* ascii code for the ellipsis character */
 	width: 0px;
+}
+
+#loadingText {
+	margin-left: 1em;
 }
 
 @keyframes spinSkew {
