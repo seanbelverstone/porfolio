@@ -37,7 +37,7 @@
 	margin: 2em;
 }
 
-#aboutText {
+.aboutText {
 	width: 25vw;
 	margin: 2em;
 	background-color: var(--foregroundFaded);
@@ -55,7 +55,7 @@
 	.leftAligned, .rightAligned {
 		flex-wrap: wrap;
 	}
-	#aboutText {
+	.aboutText {
 		width: 75%;
 	}
 	#imgContainer {
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 600px) {
-	#aboutText {
+	.aboutText {
 		width: 100%;
 		margin: 2em 0;
 	}
@@ -89,6 +89,12 @@
 @media screen and (max-width: 510px) {
 	#aboutPage {
 		padding: 4em 1em;
+	}
+	.rightAligned {
+		margin-top: 2em !important;
+	}
+	#rowThree {
+		margin: 0 !important;
 	}
 	.MuiImageList-root {
 		width: 80vw !important;

@@ -1,0 +1,41 @@
+#scrollArrow {
+	position: fixed;
+	right: 0;
+	bottom: 5%;
+}
+
+.show {
+	animation: slideIn 1s ease;
+}
+
+.hide {
+	animation: slideOut 1s ease;
+}
+
+@keyframes slideIn {
+	0% {
+		bottom: -50%;
+		opacity: 0;
+	}
+	75% {
+		bottom: 6%;
+	}
+	100% {
+		bottom: 5%;
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		bottom: 5%;
+		opacity: 1;
+	}
+	75% {
+		bottom: -50%;
+	}
+	100% {
+		opacity: 0;
+		bottom: -50%;
+	}
+}

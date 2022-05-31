@@ -1,8 +1,15 @@
+import React, { useState, useEffect } from 'react';
 import ImageGallery from '../components/ImageGallery';
 import { allImages } from '../assets/index';
 import './css/About.css';
+import ScrollToTop from '../components/ScrollToTop';
 
 const About = () => {
+	const [scrollHeight, setScrollHeight] = useState('')
+	document.addEventListener('scroll', () => {
+		setScrollHeight(window.scrollY);
+	});
+
 	return (
 		<div id="aboutPage">
 			<div className="leftAligned" id="rowOne">
@@ -12,14 +19,14 @@ const About = () => {
 					alt="Me with the crew at Bird Bird Biscuit"
 					className="mainImages"
 					/>
-				<p id="aboutText">As an English native and having experience that was almost exclusively based in the food and beverage
+				<p className="aboutText">As an English native and having experience that was almost exclusively based in the food and beverage
 				 industry, moving careers was a big decision, but one that I took to quickly.<br /><br />
 				After getting married in 2016, my wife and I moved to Austin in 2018, and I began working at a small biscuit sandwich
 				 shop called <b>Bird Bird Biscuit</b>. During my time there I recieved a promotion to the role of manager and was lucky
 				  enough to count myself as one of the chief biscuit makers.</p>
 			</div>
 			<div className="rightAligned" id="rowTwo">
-				<p id="aboutText">I then went on to complete a <b>Full Stack Web Development Bootcamp at UT Austin</b>, and graduated
+				<p className="aboutText">I then went on to complete a <b>Full Stack Web Development Bootcamp at UT Austin</b>, and graduated
 				 with flying colors. JavaScript makes sense to me on a logical level, and although I had some challenges along the way
 				  (looking at you, Redux) I greatly enjoyed learning my first programming language. Since then I've been focusing most of
 				   my attention on refining my fundamental skills, ironing out any React creases, and building as many things as I
@@ -38,7 +45,7 @@ const About = () => {
 					id="corvia"
 					className="mainImages"
 					/>
-				<p id="aboutText">After returning to the UT bootcamp as a TA for a semester, I finally managed to land my first
+				<p className="aboutText">After returning to the UT bootcamp as a TA for a semester, I finally managed to land my first
 				 engineering role at a wonderful finance-tech company called <b>Corvia</b>, previously named F1 Payments. Within this
 				 role I've been able to further enhance my abilities as a front-end web developer and get accustomed to common industry
 				 practices, such as utilizing an <i>agile</i> workflow, 
@@ -52,6 +59,7 @@ const About = () => {
 			<div id="collage">
 				<ImageGallery />
 			</div>
+			<ScrollToTop scrollHeight={scrollHeight} />
 		</div>
 
 	)
