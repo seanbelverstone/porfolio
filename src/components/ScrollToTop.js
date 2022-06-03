@@ -17,7 +17,6 @@ const ScrollToTop = (props) => {
 		});
 	}
 	
-	console.log(!isEmpty(scrollHeight));
 	return (
 		<Button
 		id="scrollArrow"

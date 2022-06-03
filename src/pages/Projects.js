@@ -4,6 +4,7 @@ import { allImages } from '../assets';
 import Button from '../components/Button';
 import PageContent from '../components/PageContent';
 import ProjectCard from '../components/ProjectCard';
+import ScrollToTop from '../components/ScrollToTop';
 import { projectList } from '../utils';
 import './css/Projects.css';
 
@@ -81,7 +82,6 @@ const Projects = () => {
 			) : (
 				<>
 					<div id="projectTitleWrapper">
-						<h1>Projects</h1>
 						<img id="questionMark" src={questionMark} alt="A question mark" onClick={() => setNote(!note)} />
 						{note && (
 							<div id="sizeNote">
@@ -101,6 +101,7 @@ const Projects = () => {
 							git={project.githubLink}
 						/>
 					))}
+					<ScrollToTop />
 				</>
 			)}
 

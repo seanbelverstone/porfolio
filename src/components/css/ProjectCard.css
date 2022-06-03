@@ -45,7 +45,12 @@
 		width: 90vw;
 		margin-bottom: 2em;
 	}
-
+	.projectCardWrapper {
+		width: 90vw;
+	}
+	.pageTitle {
+		padding: 0 1em;
+	}
 	.projectImage {
 		width: 20em;
 	}

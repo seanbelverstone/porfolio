@@ -16,6 +16,11 @@
 	width: 90vw;
 	justify-content: center;
 	align-items: center;
+	margin: 1em;
+}
+
+.pageTitle {
+	font-size: 2em;
 }
 
 #sizeNote {
@@ -53,20 +58,40 @@
 
 @media screen and (max-width: 1382px) {
 	#projectsPage {
-		padding: 100px;
+		padding: 7vw 4em 0 4em;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	#projectsPage {
+		padding: 10vw 1em 0 1em;
+	}
 	#projectTitleWrapper {
 		display: flex;
 		width: 90vw;
-		justify-content: space-between;
 		align-items: center;
 		flex-direction: row;
 	}
 	#sizeNote {
 		top: 20vh;
 		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#projectsPage {
+		padding: 15vw 1em 0 1em;
+	}
+	.pageTitle {
+		font-size: 1.8em;
+	}
+	.projectText {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.projectImage {
+		width: 15em;
 	}
 }
