@@ -74,7 +74,8 @@ const Projects = () => {
 
 						<PageContent coverType="backCover" mainTitle="Thank you!" cover />
 						<PageContent coverType="postCover" />
-					</HTMLFlipBook><div id="buttons">
+					</HTMLFlipBook>
+					<div id="buttons">
 						<Button text="&lt;&lt; Prev page" callback={() => book.current.pageFlip().flipPrev()} />
 						<Button text="Next page &gt;&gt;" callback={() => book.current.pageFlip().flipNext()} />
 					</div>
@@ -92,14 +93,17 @@ const Projects = () => {
 					</div>
 
 					{Object.values(projectList).map(project => (
-						<ProjectCard
-							title={project.title}
-							src={project.src}
-							altImage={project.srcTwo}
-							text={project.description}
-							live={project.liveLink}
-							git={project.githubLink}
-						/>
+						<div key={project.title}>
+							<ProjectCard
+								title={project.title}
+								src={project.src}
+								altImage={project.srcTwo}
+								text={project.description}
+								live={project.liveLink}
+								git={project.githubLink}
+							/>
+						</div>
+
 					))}
 					<ScrollToTop />
 				</>

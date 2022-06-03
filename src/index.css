@@ -8,6 +8,7 @@
   --primaryFaded: #8FAFFF9a;
   --secondary: #647BB3;
   --tertiary: #B39264;
+  --boxShadow: .2em .2em .2em var(--secondary);
 }
 
 body,

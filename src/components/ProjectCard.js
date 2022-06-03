@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
 	}
 
 	return (
-		<div className="projectCardWrapper">
+		<div className="projectCardWrapper" key={title}>
 			<h1 className='pageTitle'>{title}</h1>
 			<img className="projectImage" src={currentImage} alt={title} onClick={() => handleClick(clicked)} />
 			<i style={{ marginTop: '0.5em' }}>Click on the image for an alternate view</i>

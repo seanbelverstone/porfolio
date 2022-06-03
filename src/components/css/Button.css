@@ -7,7 +7,7 @@ button {
 	transition: 0.05s linear 50ms;
 	z-index: 0;
 	color: var(--secondary);
-	box-shadow: 2px 2px 2px var(--secondary);
+	box-shadow: var(--boxShadow);
 }
 
 button:hover {
