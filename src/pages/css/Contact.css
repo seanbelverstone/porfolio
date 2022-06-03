@@ -20,6 +20,11 @@
 	margin: .75em !important;
 }
 
+.MuiFormControl-root.MuiTextField-root {
+	border-radius: 0.5em;
+	box-shadow: 2px 2px 2px var(--secondary);
+}
+
 #message {
 	height: 10em !important;
 	width: 20vw !important;
@@ -42,5 +47,38 @@
 	}
 	100% {
 		opacity: 1
+	}
+}
+
+@media screen and (max-width: 1382px) {
+	#contactPage {
+		padding: 15vh 4em 0 4em
+	}
+	#contactForm {
+		width: 30vw;
+	}
+	#thankYouMessage {
+		padding: 1em;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#contactForm {
+		width: 40vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#contactForm {
+		width: 50vw;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#contactPage {
+		padding: 15vh 1em 0 1em
+	}
+	#contactForm {
+		width: 100%;
 	}
 }

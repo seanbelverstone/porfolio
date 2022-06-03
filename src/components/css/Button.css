@@ -6,7 +6,8 @@ button {
 	border-radius: 15px;
 	transition: 0.05s linear 50ms;
 	z-index: 0;
-	color: var(--secondary)
+	color: var(--secondary);
+	box-shadow: 2px 2px 2px var(--secondary);
 }
 
 button:hover {

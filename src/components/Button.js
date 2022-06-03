@@ -1,11 +1,12 @@
 import './css/Button.css';
 
 const Button = (props) => {
-	const { text, callback, id, href, target, rel, type, disabled, style } = props;
+	const { text, icon, callback, id, className, href, target, rel, type, disabled, style } = props;
 
 	return (
 		<button
 			id={id}
+			className={className}
 			onClick={callback}
 			href={href}
 			target={target}
@@ -24,6 +25,14 @@ const Button = (props) => {
 				}
 			}}
 			>
+			{icon && (
+				<>
+					{icon}
+					<br />
+				</>
+
+			)}
+			
 			{text}
 		</button>
 	)
