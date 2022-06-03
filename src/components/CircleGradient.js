@@ -6,7 +6,6 @@ export const CircleGradient = () => {
 	useEffect(() => {
 		setPageName(document.querySelector('#projectsPage')?.id)
 	}, [])
-	console.log(pageName);
 	return (
 	<div id="circleGradient" style={{ ...(window.innerWidth < 1152 || pageName === 'projectsPage') && { display: 'none' } }}/>
 )};

@@ -22,7 +22,7 @@
 
 .MuiFormControl-root.MuiTextField-root {
 	border-radius: 0.5em;
-	box-shadow: 2px 2px 2px var(--secondary);
+	box-shadow: var(--boxShadow);
 }
 
 #message {
