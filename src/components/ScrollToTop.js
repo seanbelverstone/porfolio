@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import './css/ScrollToTop.css';
+import Button from './Button';
 
 const ScrollToTop = (props) => {
 	const { scrollHeight } = props;
@@ -11,15 +12,16 @@ const ScrollToTop = (props) => {
 			behavior: "smooth"
 		});
 	}
-
+	console.log(scrollHeight);
 	return (
-		<div
-			id="scrollArrow"
-			onClick={goToTop}
-			className={window.innerWidth < 1152 && scrollHeight > 150
-			? 'show' : 'hide'}>
-			<ArrowUpwardIcon />
-		</div>
+		<Button
+		id="scrollArrow"
+		callback={goToTop}
+		className={scrollHeight > 150
+		? 'show' : 'hide'}
+		icon={<ArrowUpwardIcon />}
+		text="back to top"
+		/>
 	)
 
 }
