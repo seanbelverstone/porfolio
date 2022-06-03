@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import './css/ScrollToTop.css';
 import Button from './Button';
+import { isEmpty } from '../utils';
 
 const ScrollToTop = (props) => {
-	const { scrollHeight } = props;
+	const [scrollHeight, setScrollHeight] = useState('')
+	document.addEventListener('scroll', () => {
+		setScrollHeight(window.scrollY);
+	});
 
 	const goToTop = () => {
 		window.scrollTo({
@@ -12,12 +16,13 @@ const ScrollToTop = (props) => {
 			behavior: "smooth"
 		});
 	}
-	console.log(scrollHeight);
+	
+	console.log(!isEmpty(scrollHeight));
 	return (
 		<Button
 		id="scrollArrow"
 		callback={goToTop}
-		className={scrollHeight > 150
+		className={!isEmpty(scrollHeight) && scrollHeight >= 150
 		? 'show' : 'hide'}
 		icon={<ArrowUpwardIcon />}
 		text="back to top"

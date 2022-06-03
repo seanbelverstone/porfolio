@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import ImageGallery from '../components/ImageGallery';
 import { allImages } from '../assets/index';
 import './css/About.css';
 import ScrollToTop from '../components/ScrollToTop';
 
 const About = () => {
-	const [scrollHeight, setScrollHeight] = useState('')
-	document.addEventListener('scroll', () => {
-		setScrollHeight(window.scrollY);
-	});
 
 	return (
 		<div id="aboutPage">
@@ -59,7 +55,7 @@ const About = () => {
 			<div id="collage">
 				<ImageGallery />
 			</div>
-			<ScrollToTop scrollHeight={scrollHeight} />
+			<ScrollToTop />
 		</div>
 
 	)
