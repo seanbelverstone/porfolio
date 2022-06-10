@@ -25,7 +25,9 @@
 .preCover, .postCover {
 	border: none;
 	background-color: var(--background) !important;
-	background-image: none !important;
+	background-image: url('../../assets/backgroundTexture.png') !important;
+	background-size: 30em !important;
+	background-position: center;
 }
 
 .postCover {
