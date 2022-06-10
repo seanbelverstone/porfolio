@@ -24,6 +24,7 @@
 	margin: 2em;
 	padding: 2em;
 	border-radius: 15em;
+	/* min-width: 40vw; */
 }
 
 .title {
@@ -85,7 +86,7 @@
 	}
 
 	#introWrapper {
-		padding: 2em;
+		padding: 3em;
 	}
 	
 	#descriptionWrapper {
@@ -114,6 +115,11 @@
 	.title {
 		font-size: 3em;
 		margin-top: 0;
+	}
+
+	#introWrapper {
+		min-width: 0 !important;
+		font-size: 85%;
 	}
 
 	.mainImages {
