@@ -44,7 +44,7 @@ const PageContent = forwardRef((props, ref) => {
 				</>
 			)}
 			{text && (
-				<div className="projectText">
+				<div className="projectText glass">
 					{renderText()}
 					{(live && git) && (
 						<div className="projectLinks">

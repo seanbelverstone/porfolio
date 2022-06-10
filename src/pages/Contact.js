@@ -78,7 +78,7 @@ const Contact = () => {
 
 	return (
 		<div id="contactPage">
-			<form id="contactForm" onSubmit={handleSubmit}>
+			<form id="contactForm" className="glass" onSubmit={handleSubmit}>
 				<Loader loading={loading} />
 				{!messageSent ? (
 					<>

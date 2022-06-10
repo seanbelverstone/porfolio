@@ -27,12 +27,13 @@
 	background-color: var(--secondary);
 	color: var(--foreground);
 	position: absolute;
-	top: 33vh;
+	top: 15vh;
 	margin: 0 auto;
 	padding: 1em 1em 2em 1em;
-	width: 80vw;
+	width: 40vw;
 	border-radius: 15px;
 	border: 2px solid black;
+	text-align: center;
 }
 
 #questionMark {
@@ -45,7 +46,7 @@
 	text-align: right;
 	padding-bottom: 0.25em;
 	font-weight: bold;
-	color: var(--tertiary);
+	color: var(--foregroundLightened);
 }
 
 .closeButton:hover {
@@ -73,8 +74,8 @@
 		flex-direction: row;
 	}
 	#sizeNote {
-		top: 20vh;
-		width: 85vw;
+		top: 18vh;
+		width: 40vw;
 	}
 }
 
