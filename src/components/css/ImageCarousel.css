@@ -10,11 +10,13 @@
 
 .carouselText {
 	position: absolute;
-	top: 26em;
+	top: 25.5em;
 	right: 1vw;
-	color: black;
-	background-color: var(--foreground);
-	padding: 0.5em;
-	border-radius: 50%;
-	opacity: 0.9;
+	color: white;
+	padding: .75em;
+	border-radius: 15em;
+}
+
+.carouselText::before {
+	backdrop-filter: blur(8px);
 }

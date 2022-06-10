@@ -40,7 +40,6 @@
 .aboutText {
 	width: 25vw;
 	margin: 2em;
-	background-color: var(--foregroundFaded);
 	padding: 1em;
 	border-radius: 2em;
 }

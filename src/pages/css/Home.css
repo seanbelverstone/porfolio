@@ -22,7 +22,6 @@
 
 #introWrapper {
 	margin: 2em;
-	background-color: var(--foregroundFaded);
 	padding: 2em;
 	border-radius: 15em;
 }
@@ -42,7 +41,6 @@
 	max-width: 20em;
 	border-radius: 25%;
 	border: 8px double var(--secondary);
-	background-color: var(--foregroundFaded);
 }
 
 #socialsWrapper {
@@ -51,10 +49,13 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: var(--foregroundFaded);
 	padding: 1em 0;
 	margin-left: 2em;
 	border-radius: 15em;
+}
+
+#socialsWrapper::before {
+	backdrop-filter: blur(1px);
 }
 
 .socialLogo {
