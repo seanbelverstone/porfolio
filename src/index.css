@@ -35,6 +35,10 @@ code {
     monospace;
 }
 
+button {
+	box-shadow: none;
+}
+
 a {
   text-decoration: none;
   color: black;

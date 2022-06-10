@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
 			<h1 className='pageTitle'>{title}</h1>
 			<img className="projectImage" src={currentImage} alt={title} onClick={() => handleClick(clicked)} />
 			<i style={{ marginTop: '0.5em' }}>Click on the image for an alternate view</i>
-			<div className="projectText">
+			<div className="projectText glass">
 				{renderText()}
 				<div className="projectLinks">
 					<a href={live} target="_blank" rel="noreferrer">Live Demo</a>
