@@ -2,6 +2,45 @@
     padding: 5em;
 }
 
+.parallax {
+    /* parallax scrolling */
+    margin: 6em auto 1em auto;
+	min-height: 40em;
+    width: 100%;
+	border-radius: 1em;
+	border: 8px double var(--secondary);
+	background-image: url('../../assets/aboutPictures/beach.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+#aboutTitle {
+	text-align: center;
+	width: fit-content;
+	padding: 0.5em;
+	border-radius: 1em;
+	position: absolute;
+	border: 8px double var(--secondary);
+	top: 1em;
+	right: 11.75em;
+	font-weight: 400;
+	font-size: 4em;
+}
+
+#parallax2 {
+	background-image: url('../../assets/aboutPictures/beach.jpg');
+}
+
+.imgDesc {
+	font-size: 3em;
+	text-align: center;
+}
+
+
 .leftAligned,
 .rightAligned,
 #collage {

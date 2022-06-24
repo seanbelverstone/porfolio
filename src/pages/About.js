@@ -9,6 +9,9 @@ const About = () => {
 
 	return (
 		<div id="aboutPage">
+			<div className="parallax">
+				<h1 className="aboutTitle glass" id="aboutTitle">About Me</h1>
+			</div>
 			<div className="leftAligned" id="rowOne">
 				<img
 					src={allImages.birdBirdCrew}
