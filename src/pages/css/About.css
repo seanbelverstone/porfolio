@@ -1,104 +1,112 @@
 #aboutPage {
-	padding: 5em;
+    padding: 5em;
 }
 
-.leftAligned, .rightAligned, #collage {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.leftAligned,
+.rightAligned,
+#collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #rowOne {
-	margin-bottom: -4em;
+    margin-bottom: -4em;
+}
+
+#projectTextLink {
+	padding: 0;
 }
 
 #rowTwo {
-	margin-top: -4em;
+    margin-top: -4em;
 }
 
 #rowThree {
-	margin-top: -3em;
-	margin-bottom: 4em;
+    margin-top: -3em;
+    margin-bottom: 4em;
 }
 
 #listWrapper {
-	border: 8px double var(--secondary);
-	border-radius: 5%;
-	padding: 5px !important;
-	max-height: 50%;
-	background-color: var(--foreground);
+    border: 8px double var(--secondary);
+    border-radius: 5%;
+    padding: 5px !important;
+    max-height: 50%;
+    background-color: var(--foreground);
 }
 .MuiImageList-root {
-	border-radius: 5%;
-	margin: 0px !important;
+    border-radius: 5%;
+    margin: 0px !important;
 }
 
-#meDuckyAndMouse, #birdBirdCrew {
-	margin: 2em;
+#meDuckyAndMouse,
+#birdBirdCrew {
+    margin: 2em;
 }
 
 .aboutText {
-	width: 25vw;
-	margin: 2em;
-	padding: 1em;
-	border-radius: 2em;
+    width: 25vw;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 2em;
 }
 
 .MuiImageListItem-root {
-	margin-left: -2px;
-	margin-bottom: -2px;
-	overflow-y: hidden;
+    margin-left: -2px;
+    margin-bottom: -2px;
+    overflow-y: hidden;
 }
 
 @media screen and (max-width: 992px) {
-	.leftAligned, .rightAligned {
-		flex-wrap: wrap;
-	}
-	.aboutText {
-		width: 75%;
-	}
-	#imgContainer {
-		display: block;
-	}
-	#birdBirdCrew {
-		margin: 0;
-	}
-	#meDuckyAndMouse {
-		display: none;
-	}
-	#collage {
-		margin-top: 1em;
-	}
-	.MuiImageList-root {
-		width: 65vw !important;
-	}
+    .leftAligned,
+    .rightAligned {
+        flex-wrap: wrap;
+    }
+    .aboutText {
+        width: 75%;
+    }
+    #imgContainer {
+        display: block;
+    }
+    #birdBirdCrew {
+        margin: 0;
+    }
+    #meDuckyAndMouse {
+        display: none;
+    }
+    #collage {
+        margin-top: 1em;
+    }
+    .MuiImageList-root {
+        width: 65vw !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
-	.aboutText {
-		width: 100%;
-		margin: 2em 0;
-	}
-	.MuiImageList-root {
-		width: 80vw !important;
-		height: auto;
-	}
+    .aboutText {
+        width: 100%;
+        margin: 2em 0;
+    }
+    .MuiImageList-root {
+        width: 80vw !important;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 510px) {
-	#aboutPage {
-		padding: 4em 1em;
-	}
-	.rightAligned {
-		margin-top: 2em !important;
-	}
-	#rowThree {
-		margin: 0 !important;
-	}
-	.MuiImageList-root {
-		width: 80vw !important;
-	}
-	.images {
-		width: 95vw !important;
-	}
+    #aboutPage {
+        padding: 4em 1em;
+    }
+    .rightAligned {
+        margin-top: 2em !important;
+    }
+    #rowThree {
+        margin: 0 !important;
+    }
+    .MuiImageList-root {
+        width: 80vw !important;
+    }
+    .images {
+        width: 95vw !important;
+    }
 }
