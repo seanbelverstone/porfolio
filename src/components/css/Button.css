@@ -11,11 +11,11 @@ button {
 }
 
 button:hover {
-	opacity: 0.5;
+	transform: scale(1.1);
 }
 
 button:active {
-	transform: scale(1.1);
+	transform: scale(0.95);
 }
 
 button.MuiButtonBase-root {
