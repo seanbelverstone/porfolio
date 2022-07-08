@@ -23,12 +23,10 @@
 	width: fit-content;
 	padding: 0.5em;
 	border-radius: 1em;
-	position: absolute;
 	border: 8px double var(--secondary);
-	top: 1em;
-	right: 11.75em;
+	margin: -1.4em auto;
 	font-weight: 400;
-	font-size: 4em;
+	font-size: 3.5em;
 }
 
 #parallax2 {
@@ -96,13 +94,28 @@
     overflow-y: hidden;
 }
 
+@media screen and (max-width: 1120px) {
+	#aboutPage {
+		overflow-x: hidden;
+	}
+}
+
 @media screen and (max-width: 992px) {
     .leftAligned,
     .rightAligned {
         flex-wrap: wrap;
     }
+	#aboutTitle {
+		font-size: 3em;
+	}
     .aboutText {
-        width: 75%;
+        width: 90%;
+    }
+	.rightAligned {
+        margin-top: 2em !important;
+    }
+    #rowThree {
+        margin: 0 !important;
     }
     #imgContainer {
         display: block;
@@ -122,10 +135,16 @@
 }
 
 @media screen and (max-width: 600px) {
+	#aboutTitle {
+		font-size: 2em;
+	}
     .aboutText {
         width: 100%;
         margin: 2em 0;
     }
+	#birdBirdCrew, #corvia {
+		margin-left: 8px;
+	}
     .MuiImageList-root {
         width: 80vw !important;
         height: auto;
@@ -134,18 +153,74 @@
 
 @media screen and (max-width: 510px) {
     #aboutPage {
-        padding: 4em 1em;
+        padding: 2em 1em;
     }
-    .rightAligned {
-        margin-top: 2em !important;
-    }
-    #rowThree {
-        margin: 0 !important;
-    }
+	.parallax {
+		width: 97%;
+	}
+	#aboutTitle {
+		font-size: 1.5em;
+	}
     .MuiImageList-root {
         width: 80vw !important;
     }
     .images {
         width: 95vw !important;
     }
+    .aboutText {
+        width: 95%;
+        margin: 2em 0;
+    }
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform-origin: left;
+		transform: translateX(-50%);
+	}
+	100% {
+		opacity: 1;
+		transform-origin: left;
+		transform: translateX(-2%);
+	}
+}
+
+@keyframes fadeOutRight {
+	0% {
+		opacity: 1;
+		transform-origin: left;
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 0;
+		transform-origin: left;
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform-origin: right;
+		transform: translateX(50%);
+	}
+	100% {
+		opacity: 1;
+		transform-origin: right;
+		transform: translateX(-2%);
+	}
+}
+
+@keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		transform-origin: right;
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 0;
+		transform-origin: right;
+		transform: translateX(50%);
+	}
 }
