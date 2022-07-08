@@ -23,12 +23,10 @@
 	width: fit-content;
 	padding: 0.5em;
 	border-radius: 1em;
-	position: absolute;
 	border: 8px double var(--secondary);
-	top: 1em;
-	right: 11.75em;
+	margin: -1.4em auto;
 	font-weight: 400;
-	font-size: 4em;
+	font-size: 3.5em;
 }
 
 #parallax2 {
@@ -101,8 +99,17 @@
     .rightAligned {
         flex-wrap: wrap;
     }
+	#aboutTitle {
+		font-size: 3em;
+	}
     .aboutText {
         width: 75%;
+    }
+	.rightAligned {
+        margin-top: 2em !important;
+    }
+    #rowThree {
+        margin: 0 !important;
     }
     #imgContainer {
         display: block;
@@ -122,6 +129,9 @@
 }
 
 @media screen and (max-width: 600px) {
+	#aboutTitle {
+		font-size: 2em;
+	}
     .aboutText {
         width: 100%;
         margin: 2em 0;
@@ -136,12 +146,9 @@
     #aboutPage {
         padding: 4em 1em;
     }
-    .rightAligned {
-        margin-top: 2em !important;
-    }
-    #rowThree {
-        margin: 0 !important;
-    }
+	#aboutTitle {
+		font-size: 1.5em;
+	}
     .MuiImageList-root {
         width: 80vw !important;
     }

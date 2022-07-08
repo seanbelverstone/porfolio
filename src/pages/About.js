@@ -7,6 +7,8 @@ import { NavLink } from 'react-router-dom';
 
 const About = () => {
 
+	// slide in divs when they come into view.
+
 	return (
 		<div id="aboutPage">
 			<div className="parallax">
