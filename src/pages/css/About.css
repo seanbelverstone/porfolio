@@ -94,6 +94,12 @@
     overflow-y: hidden;
 }
 
+@media screen and (max-width: 1120px) {
+	#aboutPage {
+		overflow-x: hidden;
+	}
+}
+
 @media screen and (max-width: 992px) {
     .leftAligned,
     .rightAligned {
@@ -103,7 +109,7 @@
 		font-size: 3em;
 	}
     .aboutText {
-        width: 75%;
+        width: 90%;
     }
 	.rightAligned {
         margin-top: 2em !important;
@@ -136,6 +142,9 @@
         width: 100%;
         margin: 2em 0;
     }
+	#birdBirdCrew, #corvia {
+		margin-left: 8px;
+	}
     .MuiImageList-root {
         width: 80vw !important;
         height: auto;
@@ -144,8 +153,11 @@
 
 @media screen and (max-width: 510px) {
     #aboutPage {
-        padding: 4em 1em;
+        padding: 2em 1em;
     }
+	.parallax {
+		width: 97%;
+	}
 	#aboutTitle {
 		font-size: 1.5em;
 	}
@@ -155,4 +167,60 @@
     .images {
         width: 95vw !important;
     }
+    .aboutText {
+        width: 95%;
+        margin: 2em 0;
+    }
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform-origin: left;
+		transform: translateX(-50%);
+	}
+	100% {
+		opacity: 1;
+		transform-origin: left;
+		transform: translateX(-2%);
+	}
+}
+
+@keyframes fadeOutRight {
+	0% {
+		opacity: 1;
+		transform-origin: left;
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 0;
+		transform-origin: left;
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform-origin: right;
+		transform: translateX(50%);
+	}
+	100% {
+		opacity: 1;
+		transform-origin: right;
+		transform: translateX(-2%);
+	}
+}
+
+@keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		transform-origin: right;
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 0;
+		transform-origin: right;
+		transform: translateX(50%);
+	}
 }

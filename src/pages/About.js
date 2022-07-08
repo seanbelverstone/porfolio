@@ -8,16 +8,12 @@ import SlideInDiv from '../components/SlideInDiv';
 
 const About = () => {
 
-	const getFadeLeftStyles = isfadeLeftInViewPort => ({
-		transition: 'all .75s ease',
-		opacity: isfadeLeftInViewPort ? '1' : '0',
-		transform: isfadeLeftInViewPort ? '' : 'translateX(50%)'
+	const getFadeLeftStyles = isFadeLeftInViewport => ({
+		animation: `${isFadeLeftInViewport ? 'fadeInLeft' : 'fadeOutLeft'} .75s ease forwards`
 	});
 
-	const getFadeRightStyles = isfadeRightInViewPort => ({
-		transition: 'all .75s ease',
-		opacity: isfadeRightInViewPort ? '1' : '0',
-		transform: isfadeRightInViewPort ? '' : 'translateX(-50%)'
+	const getFadeRightStyles = isFadeRightInViewport => ({
+		animation: `${isFadeRightInViewport ? 'fadeInRight' : 'fadeOutRight'} .75s ease forwards`
 	});
 
 	return (
