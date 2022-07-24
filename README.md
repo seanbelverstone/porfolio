@@ -26,4 +26,11 @@ If you'd rather see my project running live, make sure to visit [www.seanbelvers
 
 ## Plans For The Future?
 As mentioned before I'm currently studying Unreal Engine 5 and plan to use create an interactable book to display my projects, which I'll embed inside the Projects page using Pixel Streaming. If you want to check it out and see what kind of work it'll take, you can see the documentation [here](https://docs.unrealengine.com/5.0/en-US/pixel-streaming-in-unreal-engine/). It's very exciting and will take some serious man-hours before I'm proficient enough to make it work, but I love learning new things.
-Aside from UE5, I intend to revisit my portfolio regularly, to make changes and ensure that it remains up-to-date with all the new features that are releasing
+
+Aside from UE5 I intend to revisit my portfolio regularly, to make changes and ensure that it remains up-to-date with all the new features that are releasing and implementing new pieces of knowledge that I obtain over the course of my coding career.
+
+
+
+If you fancy reaching out or want to connect - please either contact me through the [Contact Page](https://www.seanbelverstone.com/contact) on my portfolio, or by hitting me up on my socials.
+
+[![A LinkedIn icon, directing the user to Sean's profile](/src/assets/socials/linkedinSmall.png)](https://www.linkedin.com/in/sean-belverstone/ "Sean Belverstone")    [![An Instagram icon, directing the user to Sean's profile](/src/assets/socials/instagramSmall.png)](https://www.instagram.com/seanbelverstone/ "Sean Belverstone")    [![A GitHub icon, directing the user to Sean's profile](/src/assets/socials/githubSmall.png)](https://github.com/seanbelverstone "Sean Belverstone")
