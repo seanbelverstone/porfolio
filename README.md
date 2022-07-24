@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Sean Belverstone Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+I set out to create this portfolio to demonstrate the skills that I've picked up and developed over the years since becoming
+a developer.
+With the exception of two components - the Projects book and the About picture block - everything on the page is custom-made. It is my intention to replace the last two libraries with my own version. One intent I have is by making the Projects book in Unreal Engine 5, but that will take some time.
 
-## Available Scripts
+## Technologies Used
+- Javascript
+- React
+- MaterialUI
+- react-pageflip
+- react-responsive-carousel
 
-In the project directory, you can run:
+## Install Instructions
+If you'd like to install this portfolio and run it locally, follow the steps below:
 
-### `npm start`
+1. Clone the porfolio from the [repository](https://github.com/seanbelverstone/portfolio2022).
+2. Run `yarn` to install all of the packages.
+3. If you'd like to include the testing for sending an email from the contact page, create an account on [Email JS](https://www.emailjs.com/) and follow their instructions to get set up, and create a template.
+4. Add the user ID as a value to your own `.env` file under the key of `REACT_APP_EMAILJS_USER_ID`
+5. Run the project with `yarn start` and it should display in your browser of choice.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
+If you'd rather see my project running live, make sure to visit [www.seanbelverstone.com](https://www.seanbelverstone.com)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Plans For The Future?
+As mentioned before I'm currently studying Unreal Engine 5 and plan to use create an interactable book to display my projects, which I'll embed inside the Projects page using Pixel Streaming. If you want to check it out and see what kind of work it'll take, you can see the documentation [here](https://docs.unrealengine.com/5.0/en-US/pixel-streaming-in-unreal-engine/). It's very exciting and will take some serious man-hours before I'm proficient enough to make it work, but I love learning new things.
+Aside from UE5, I intend to revisit my portfolio regularly, to make changes and ensure that it remains up-to-date with all the new features that are releasing
