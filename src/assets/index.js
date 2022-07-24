@@ -23,7 +23,6 @@ import lotrTwo from './projects/lotrTwo.png';
 import reelTime from './projects/reelTime.png';
 import reelTimeTwo from './projects/reelTimeTwo.png';
 // aboutMe pictures
-import beach from './aboutPictures/beach.jpg';
 import bella1 from './aboutPictures/bella1.jpg';
 import bella2 from './aboutPictures/bella2.jpg';
 import bellaPoppy from './aboutPictures/bellaPoppy.jpg';
@@ -31,6 +30,7 @@ import bread from './aboutPictures/bread.jpg';
 import cecil1 from './aboutPictures/cecil1.jpg';
 import climbing1 from './aboutPictures/climbing1.jpg';
 import climbing2 from './aboutPictures/climbing2.jpg';
+import climbing3 from './aboutPictures/climbing3.jpg';
 import coding from './aboutPictures/coding.jpg';
 import ducky from './aboutPictures/ducky.jpg';
 import meSuit from './aboutPictures/meSuit.jpg';
@@ -58,7 +58,7 @@ export const carouselImages = [
 ];
 
 export const aboutPictures = [
-	{ img: beach, title: 'Summerleaze Beach, Bude' },
+	{ img: climbing3, title: `Victory mandarin on mountain in Cataluña` },
 	{ img: seanOlivia2, title: 'Our tin-type photo'},
 	{ img: bella1, title: 'Bella on foster day', featured: true},
 	{ img: bella2, title: 'Bella post-foster-fail'},
